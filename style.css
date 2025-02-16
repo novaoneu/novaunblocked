@@ -123,3 +123,37 @@ main {
 .tetris-thumbnail:hover {
     transform: scale(1.10);
 }
+
+#coin-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#coin {
+    width: 100px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+#coin:hover {
+    transform: scale(1.1);
+}
+
+#upgrades {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#auto-click-upgrade {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#auto-click-upgrade:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
