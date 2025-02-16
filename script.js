@@ -12,3 +12,36 @@ document.querySelector('.dropbtn').addEventListener('click', function(event) {
     const dropdownContent = document.querySelector('.dropdown-content');
     dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
 });
+let coinCount = 0;
+let autoClickRate = 0;
+let autoClickCost = 100;
+
+const coinElement = document.getElementById('coin');
+const coinCountElement = document.getElementById('coin-count');
+const autoClickUpgradeButton = document.getElementById('auto-click-upgrade');
+
+coinElement.addEventListener('click', function() {
+    coinCount++;
+    updateCoinCount();
+});
+
+function updateCoinCount() {
+    coinCountElement.textContent = coinCount;
+}
+
+autoClickUpgradeButton.addEventListener('click', function() {
+    if (coinCount >= autoClickCost) {
+        coinCount -= autoClickCost;
+        autoClickRate++;
+        updateCoinCount();
+        autoClickUpgradeButton.disabled = true;
+        startAutoClicking();
+    }
+});
+
+function startAutoClicking() {
+    setInterval(() => {
+        coinCount += autoClickRate;
+        updateCoinCount();
+    }, 1000);
+}
