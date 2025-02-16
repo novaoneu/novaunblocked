@@ -99,3 +99,26 @@ header {
     right: 25px;
     cursor: pointer;
 }
+main {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.games-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.game-thumbnail {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.game-thumbnail:hover {
+    transform: scale(1.05);
+}
