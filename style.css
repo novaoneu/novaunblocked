@@ -113,7 +113,7 @@ main {
 
 .game-thumbnail {
     width: 50px;
-    height: auto;
+    height: 50px;
     margin-right: 20px;
     cursor: pointer;
     transition: transform 0.3s ease;
