@@ -9,9 +9,21 @@
 <body>
     <header>
         <h1>Welcome to Nova Unblocked Games</h1>
+        <button class="menu-btn" onclick="toggleSidebar()">☰</button>
     </header>
+
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">×</button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </div>
+
     <main>
         <p>Here's all of our Unblocked Games!</p>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
