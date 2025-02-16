@@ -33,6 +33,17 @@
       color: red;
       display: none;
     }
+    #backButton {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: red;
+      color: white;
+      font-size: 20px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -42,6 +53,7 @@
   </div>
   <canvas id="tetris" width="240" height="400"></canvas>
   <div id="pauseMessage">PAUSE</div>
+  <button id="backButton">Back</button>
 
   <script>
     const canvas = document.getElementById('tetris');
@@ -345,6 +357,10 @@
         updateScore();
         player.score += 10;
       }
+    });
+
+    document.getElementById('backButton').addEventListener('click', () => {
+      window.location.href = '/';
     });
 
     playerReset();
