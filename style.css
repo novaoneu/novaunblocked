@@ -7,6 +7,28 @@ body {
 }
 
 header {
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+@keyframes dropIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0; 
+    }
+    100% {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}
+
+h1 {
+    animation: dropIn 1s ease-out;
+}
+
+
+header {
     background-color: #13068f;
     color: white;
     padding: 10px;
