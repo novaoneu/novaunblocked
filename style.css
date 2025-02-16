@@ -112,8 +112,8 @@ main {
 }
 
 .tetris-thumbnail {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin-right: 20px;
     cursor: pointer;
     transition: transform 0.3s ease;
