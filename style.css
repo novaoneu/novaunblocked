@@ -112,7 +112,7 @@ main {
 }
 
 .game-thumbnail {
-    width: 200px;
+    width: 50px;
     height: auto;
     margin-right: 20px;
     cursor: pointer;
@@ -120,5 +120,5 @@ main {
 }
 
 .game-thumbnail:hover {
-    transform: scale(1.05);
+    transform: scale(1.15);
 }
