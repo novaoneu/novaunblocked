@@ -10,6 +10,7 @@ header {
     text-align: center;
     position: relative;
     padding: 20px;
+    background-color: #4CAF50; /* Change this to the desired header color */
 }
 
 .menu-btn {
